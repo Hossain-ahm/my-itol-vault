@@ -2,7 +2,7 @@
  
 A multi-page digital diary built with HTML, CSS and vanilla JavaScript. Entries are saved in the browser with the Web Storage API (`localStorage`), so they're still there after you close the tab.
  
-**Live demo:** https://hossain-ahm.github.io/my-itol-vault/
+**Live demo:** [https://hossain-ahm.github.io/my-itol-vault/](https://hossain-ahm.github.io/my-itol-vault/)
  
 ![My ITOL Vault home page](screenshots/home.png)
  
