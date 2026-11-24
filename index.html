@@ -1,1 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My ITOL Vault</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
 
+  <header class="site-header">
+    <a href="index.html" class="logo">My ITOL Vault</a>
+    <nav class="header-actions">
+      <a href="new-entry.html" class="btn btn-dark">New Entry</a>
+      <a href="vault.html" class="profile-icon" aria-label="View all entries">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"/>
+          <circle cx="12" cy="10" r="3"/>
+          <path d="M6.2 18.4a7 7 0 0 1 11.6 0"/>
+        </svg>
+      </a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="page-intro">
+      <h1>Daily Reflections</h1>
+      <p>A sanctuary for your thoughts. Captured in the quiet moments between the noise of the world.</p>
+    </section>
+
+    <section class="entry-grid" id="entry-grid">
+      <article class="card">
+        <p class="card-date">March 24, 2026</p>
+        <h2 class="card-title">The silence of the early morning is where the best ideas are born.</h2>
+        <p class="card-body">I woke up at 5:00 AM today. There is a specific kind of stillness that exists before the city wakes up...</p>
+      </article>
+
+      <article class="card">
+        <p class="card-date">December 25, 2025</p>
+        <h2 class="card-title">Rethinking the project architecture.</h2>
+        <p class="card-body">Spent the afternoon sketching out new user flows. Simplification is harder than complexity.</p>
+        <div class="tags"><span class="tag">Work</span><span class="tag">Ideas</span></div>
+      </article>
+
+      <article class="card">
+        <p class="card-date">August 21, 2025</p>
+        <h2 class="card-title">The rain in the city.</h2>
+        <p class="card-body">The way the neon lights reflect on the wet pavement tonight is mesmerizing.</p>
+        <div class="tags"><span class="tag">Poetry</span></div>
+      </article>
+
+      <article class="card">
+        <p class="card-date">August 23, 2025</p>
+        <h2 class="card-title">Notes on intentionality and the digital space.</h2>
+        <p class="card-body">Why do we feel the need to document everything? Perhaps it's an anchor against the fleeting nature of time...</p>
+      </article>
+
+      <article class="card">
+        <p class="card-date">July 2, 2025</p>
+        <h2 class="card-title">A fifth test card.</h2>
+        <p class="card-body">Placeholder to check the grid handles a fifth entry.</p>
+      </article>
+    </section>
+
+    <section class="cta">
+      <div class="cta-icon">✎</div>
+      <h3>Feeling inspired?</h3>
+      <p>Your vault is waiting for its next entry.</p>
+      <a href="new-entry.html" class="cta-link">Start writing now</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 My ITOL Vault. Designed for reflection.</p>
+    <nav>
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="vault.html">Archive</a>
+    </nav>
+  </footer>
+
+</body>
+</html>
