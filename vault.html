@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Vault | My ITOL Vault</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="index.html" class="logo">My ITOL Vault</a>
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link">Journal</a>
+      <a href="vault.html" class="nav-link active" aria-current="page">Vault</a>
+      <a href="#" class="nav-link">Collections</a>
+      <a href="#" class="nav-link">Settings</a>
+    </nav>
+    <div class="header-actions">
+      <a href="new-entry.html" class="btn btn-dark">New Entry</a>
+      <a href="vault.html" class="profile-icon" aria-label="View all entries">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"/>
+          <circle cx="12" cy="10" r="3"/>
+          <path d="M6.2 18.4a7 7 0 0 1 11.6 0"/>
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-intro">
+      <h1>My Vault</h1>
+      <p>A sanctuary for the whispers of the past, preserved in ink and digital shadow. Every word a cornerstone of who you were, and who you are becoming.</p>
+    </section>
+
+    <section class="vault-list" id="vault-list">
+      <article class="vault-row">
+        <div class="row-meta">
+          <p class="row-date">October 24, 2023</p>
+          <span class="tag">Reflection</span>
+        </div>
+        <button type="button" class="row-menu" aria-label="Entry options">•••</button>
+        <h2 class="row-title">The Weight of Silence</h2>
+        <p class="row-body">Today the city felt quieter than usual. I sat by the window and watched the rain trace patterns on the glass, wondering if the thoughts we keep hidden are the ones that define us most...</p>
+      </article>
+
+      <article class="vault-row">
+        <div class="row-meta">
+          <p class="row-date">October 18, 2023</p>
+          <span class="tag">Idea</span>
+          <span class="tag">Travel</span>
+        </div>
+        <button type="button" class="row-menu" aria-label="Entry options">•••</button>
+        <h2 class="row-title">Kyoto's Golden Hour</h2>
+        <p class="row-body">Walking through the Arashiyama bamboo grove. The light filtering through the stalks felt like being inside a green cathedral...</p>
+      </article>
+
+      <article class="vault-row">
+        <div class="row-meta">
+          <p class="row-date">September 30, 2023</p>
+          <span class="tag">Morning</span>
+        </div>
+        <button type="button" class="row-menu" aria-label="Entry options">•••</button>
+        <h2 class="row-title">Fragmented Dreams</h2>
+        <p class="row-body">There was a library with no books, only clocks. Each one ticked at a different speed, a cacophony of time passing all at once...</p>
+      </article>
+
+      <article class="vault-row">
+        <div class="row-meta">
+          <p class="row-date">August 12, 2023</p>
+          <span class="tag">Gratitude</span>
+        </div>
+        <button type="button" class="row-menu" aria-label="Entry options">•••</button>
+        <h2 class="row-title">The Simple Joy of a Perfect Peach</h2>
+        <p class="row-body">It's the small things that anchor us. Today it was a peach from the farmer's market. Sweet, sun-warmed, and heavy with juice...</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 My ITOL Vault. Designed for reflection.</p>
+    <nav>
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="vault.html">Archive</a>
+    </nav>
+  </footer>
+
+</body>
+</html>
