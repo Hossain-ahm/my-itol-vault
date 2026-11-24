@@ -219,3 +219,6 @@ button.btn { border: none; cursor: pointer; font-family: inherit; }.visually-hid
 }
 
 .card:nth-child(5) { grid-column: 1 / -1; }
+/* Fill the row when there are only 1 or 3 entries */
+.card:only-child,
+.card:nth-child(3):last-child { grid-column: 1 / -1; }
