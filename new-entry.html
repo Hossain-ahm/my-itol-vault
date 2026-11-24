@@ -1,85 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>New Entry | My ITOL Vault</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-  <script src="js/new-entry.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Entry | My ITOL Vault</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/storage.js" defer></script>
+    <script src="js/new-entry.js" defer></script>
 </head>
+
 <body>
 
-  <header class="site-header">
-    <a href="index.html" class="logo">My ITOL Vault</a>
-    <nav class="header-actions">
-      <a href="vault.html" class="nav-link">Archive</a>
-      <a href="new-entry.html" class="nav-link active" aria-current="page">New Entry</a>
-      <a href="vault.html" class="profile-icon" aria-label="View all entries">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <circle cx="12" cy="12" r="10"/>
-          <circle cx="12" cy="10" r="3"/>
-          <path d="M6.2 18.4a7 7 0 0 1 11.6 0"/>
-        </svg>
-      </a>
-    </nav>
-  </header>
+    <header class="site-header">
+        <a href="index.html" class="logo">My ITOL Vault</a>
+        <nav class="header-actions">
+            <a href="vault.html" class="nav-link">Archive</a>
+            <a href="new-entry.html" class="nav-link active" aria-current="page">New Entry</a>
+            <a href="vault.html" class="profile-icon" aria-label="View all entries">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10" />
+                    <circle cx="12" cy="10" r="3" />
+                    <path d="M6.2 18.4a7 7 0 0 1 11.6 0" />
+                </svg>
+            </a>
+        </nav>
+    </header>
 
-  <main class="container">
-    <form class="editor" id="entry-form">
+    <main class="container">
+        <form class="editor" id="entry-form">
 
-      <div class="editor-head">
-        <p class="editor-date" id="entry-date">Tuesday, November 24 2026</p>
-        <label for="entry-title" class="visually-hidden">Title</label>
-        <input type="text" id="entry-title" class="editor-title" placeholder="Untitled Reflection">
-      </div>
+            <div class="editor-head">
+                <p class="editor-date" id="entry-date">Tuesday, November 24 2026</p>
+                <label for="entry-title" class="visually-hidden">Title</label>
+                <input type="text" id="entry-title" class="editor-title" placeholder="Untitled Reflection">
+            </div>
 
-      <div class="editor-tags">
-        <label for="entry-tag" class="visually-hidden">Tag</label>
-        <select id="entry-tag" class="chip">
-          <option>Thoughtful</option>
-          <option>Reflection</option>
-          <option>Idea</option>
-          <option>Travel</option>
-          <option>Work</option>
-          <option>Morning</option>
-          <option>Gratitude</option>
-          <option>Poetry</option>
-        </select>
-        <button type="button" class="chip chip-ghost">+ Add Tag</button>
-      </div>
+            <div class="editor-tags" id="tag-list">
+                <label for="entry-tag" class="visually-hidden">Tag</label>
+                <select id="entry-tag" class="chip">
+                    <option>Thoughtful</option>
+                    <option>Reflection</option>
+                    <option>Idea</option>
+                    <option>Travel</option>
+                    <option>Work</option>
+                    <option>Morning</option>
+                    <option>Gratitude</option>
+                    <option>Poetry</option>
+                </select>
+                <label for="new-tag-input" class="visually-hidden">New tag</label>
+                <input type="text" id="new-tag-input" class="chip chip-input" placeholder="Tag name" maxlength="20"
+                    hidden>
+                <button type="button" class="chip chip-ghost" id="add-tag-btn">+ Add Tag</button>
+            </div>
 
-      <aside class="editor-note">
-        <p class="note-label">Depth Insight</p>
-        <p>Write without judgment. The vault remembers only what you choose to ink.</p>
-      </aside>
+            <aside class="editor-note">
+                <p class="note-label">Depth Insight</p>
+                <p>Write without judgment. The vault remembers only what you choose to ink.</p>
+            </aside>
 
-      <label for="entry-body" class="visually-hidden">Reflection</label>
-      <textarea id="entry-body" class="editor-body" placeholder="Begin your reflection..."></textarea>
+            <label for="entry-body" class="visually-hidden">Reflection</label>
+            <textarea id="entry-body" class="editor-body" placeholder="Begin your reflection..."></textarea>
 
-      <div class="editor-toolbar">
-        <div class="toolbar-left">
-          <button type="button" class="tool-btn">Insert Memory</button>
-          <button type="button" class="tool-btn">Private</button>
-        </div>
-        <div class="toolbar-right">
-          <button type="reset" class="tool-btn">Discard</button>
-          <button type="submit" class="btn btn-dark" id="save-btn">Save Entry</button>
-        </div>
-      </div>
+            <div class="editor-toolbar">
+                <div class="toolbar-left">
+                    <button type="button" class="tool-btn">Insert Memory</button>
+                    <button type="button" class="tool-btn">Private</button>
+                </div>
+                <div class="toolbar-right">
+                    <button type="reset" class="tool-btn">Discard</button>
+                    <button type="submit" class="btn btn-dark" id="save-btn">Save Entry</button>
+                </div>
+            </div>
 
-    </form>
-  </main>
+        </form>
+    </main>
 
-  <footer class="site-footer">
-    <p>© 2026 My ITOL Vault. Designed for reflection.</p>
-    <nav>
-      <a href="#">Privacy</a>
-      <a href="#">Terms</a>
-      <a href="vault.html">Archive</a>
-    </nav>
-  </footer>
+    <footer class="site-footer">
+        <p>© 2026 My ITOL Vault. Designed for reflection.</p>
+        <nav>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="vault.html">Archive</a>
+        </nav>
+    </footer>
 
 </body>
+
 </html>

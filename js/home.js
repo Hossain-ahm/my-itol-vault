@@ -2,15 +2,6 @@
 
 const grid = document.querySelector('#entry-grid');
 
-// Read saved entries (or an empty array)
-function getEntries() {
-  return JSON.parse(localStorage.getItem('entries')) || [];
-}
-
-// Cut long text down for the card preview
-function shorten(text, maxLength) {
-  return text.length > maxLength ? text.slice(0, maxLength).trim() + '...' : text;
-}
 
 // Build one card element from one entry object
 function createCard(entry) {
