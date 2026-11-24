@@ -51,5 +51,5 @@ saveBtn.addEventListener('click', (event) => {
   console.log('All entries:', entries);
 
   form.reset();
-  // window.location.href = 'index.html';   
+  window.location.href = 'index.html';   
 });

@@ -77,6 +77,9 @@ a { color: inherit; text-decoration: none; }
 .tags { margin-top: auto; padding-top: 1.5rem; display: flex; gap: 0.4rem; }
 .tag { font-size: 0.65rem; background: #fff; padding: 0.15rem 0.5rem; border-radius: 3px; color: var(--muted); }
 
+.card:nth-child(4n+1) .tag,
+.card:nth-child(4n) .tag { background: #ececec; }
+
 /* ---------- Call to action ---------- */
 .cta { margin-top: 1rem; border: 1px dashed #ccc; padding: 3rem 1rem; text-align: center; }
 .cta-icon { display: inline-block; background: #e6e6e6; padding: 0.3rem 0.6rem; border-radius: 4px; margin-bottom: 0.75rem; }
@@ -179,6 +182,10 @@ a { color: inherit; text-decoration: none; }
 }
 .row-title { font-size: 1.15rem; margin: 0.6rem 0 0.4rem; }
 .row-body { font-size: 0.85rem; color: #444; max-width: 40rem; }
+
+.card, .vault-row { min-width: 0; }
+.card-title, .card-body,
+.row-title, .row-body { overflow-wrap: anywhere; }
 
 @media (max-width: 640px) {
   .main-nav { display: none; }
